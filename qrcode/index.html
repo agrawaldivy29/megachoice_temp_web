@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mega Choice India</title>
+<style>
+  :root{
+    --forest:#1C3A2B;
+    --forest-deep:#12261D;
+    --gold:#C8962A;
+    --gold-light:#E4B65C;
+    --paper:#F7F5EF;
+    --leaf:#2FA85A;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html,body{height:100%;}
+  body{
+    font-family:'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    background:
+      radial-gradient(circle at 15% -10%, rgba(47,168,90,0.25), transparent 45%),
+      radial-gradient(circle at 100% 110%, rgba(200,150,42,0.18), transparent 50%),
+      var(--forest-deep);
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+    color:var(--paper);
+  }
+  .card{
+    width:100%;
+    max-width:420px;
+    background:var(--forest);
+    border-radius:24px;
+    padding:40px 28px 32px;
+    box-shadow:0 20px 60px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.04);
+    position:relative;
+    overflow:hidden;
+  }
+  .card::before{
+    content:"";
+    position:absolute;
+    top:-60px; right:-60px;
+    width:180px; height:180px;
+    background:radial-gradient(circle, rgba(47,168,90,0.35), transparent 70%);
+    pointer-events:none;
+  }
+  .logo-wrap{
+    display:flex;
+    justify-content:center;
+    margin-bottom:22px;
+  }
+  .logo-wrap img{
+    width:180px;
+    max-width:70%;
+    background:var(--paper);
+    border-radius:16px;
+    padding:14px 18px;
+  }
+  .eyebrow{
+    text-align:center;
+    color:var(--gold-light);
+    font-size:12px;
+    letter-spacing:2.5px;
+    text-transform:uppercase;
+    font-weight:600;
+    margin-bottom:6px;
+  }
+  h1{
+    text-align:center;
+    font-size:22px;
+    font-weight:600;
+    line-height:1.35;
+    margin-bottom:6px;
+    color:var(--paper);
+  }
+  .sub{
+    text-align:center;
+    font-size:14px;
+    color:rgba(247,245,239,0.65);
+    margin-bottom:30px;
+  }
+  .links{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  a.option{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    text-decoration:none;
+    background:rgba(247,245,239,0.06);
+    border:1px solid rgba(247,245,239,0.12);
+    border-radius:14px;
+    padding:16px 18px;
+    color:var(--paper);
+    transition:background 0.2s ease, transform 0.15s ease, border-color 0.2s ease;
+  }
+  a.option:hover, a.option:active{
+    background:rgba(200,150,42,0.14);
+    border-color:var(--gold);
+    transform:translateY(-1px);
+  }
+  .icon{
+    width:38px; height:38px;
+    flex:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px;
+    background:var(--gold);
+  }
+  .icon svg{width:20px; height:20px; fill:var(--forest-deep);}
+  .option-text{flex:1;}
+  .option-title{font-size:15px; font-weight:600;}
+  .option-desc{font-size:12px; color:rgba(247,245,239,0.55); margin-top:2px;}
+  .chevron{color:rgba(247,245,239,0.35); font-size:18px;}
+  footer{
+    text-align:center;
+    margin-top:28px;
+    font-size:11px;
+    color:rgba(247,245,239,0.35);
+    letter-spacing:0.5px;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo-wrap">
+      <img src="/logo.png" alt="Mega Choice India">
+    </div>
+    <div class="eyebrow">Welcome</div>
+    <h1>Where would you like to go?</h1>
+    <p class="sub">Choose one to continue</p>
+
+    <div class="links">
+      <a class="option" href="https://www.instagram.com/megachoice.official?igsh=Z3F1djRkN3B2cTJz" target="_blank" rel="noopener">
+        <span class="icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.06 2.02.25 2.75.53a5.5 5.5 0 012 1.3 5.5 5.5 0 011.3 2c.28.73.47 1.58.53 2.75.06 1.25.07 1.65.07 4.85s0 3.6-.07 4.85c-.06 1.17-.25 2.02-.53 2.75a5.5 5.5 0 01-1.3 2 5.5 5.5 0 01-2 1.3c-.73.28-1.58.47-2.75.53-1.25.06-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.17-.06-2.02-.25-2.75-.53a5.5 5.5 0 01-2-1.3 5.5 5.5 0 01-1.3-2c-.28-.73-.47-1.58-.53-2.75C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.06-1.17.25-2.02.53-2.75a5.5 5.5 0 011.3-2 5.5 5.5 0 012-1.3c.73-.28 1.58-.47 2.75-.53C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.14 0-3.51 0-4.75.07-1.02.05-1.57.21-1.94.36-.49.19-.84.42-1.2.79-.37.36-.6.71-.79 1.2-.15.37-.31.92-.36 1.94C3.9 8.49 3.9 8.86 3.9 12s0 3.51.06 4.75c.05 1.02.21 1.57.36 1.94.19.49.42.84.79 1.2.36.37.71.6 1.2.79.37.15.92.31 1.94.36 1.24.06 1.61.07 4.75.07s3.51 0 4.75-.07c1.02-.05 1.57-.21 1.94-.36.49-.19.84-.42 1.2-.79.37-.36.6-.71.79-1.2.15-.37.31-.92.36-1.94.06-1.24.07-1.61.07-4.75s0-3.51-.07-4.75c-.05-1.02-.21-1.57-.36-1.94a3.7 3.7 0 00-.79-1.2 3.7 3.7 0 00-1.2-.79c-.37-.15-.92-.31-1.94-.36C15.51 4 15.14 4 12 4zm0 3.4a4.6 4.6 0 110 9.2 4.6 4.6 0 010-9.2zm0 1.8a2.8 2.8 0 100 5.6 2.8 2.8 0 000-5.6zm4.85-2.3a1.08 1.08 0 110 2.15 1.08 1.08 0 010-2.15z"/></svg>
+        </span>
+        <span class="option-text">
+          <div class="option-title">Instagram</div>
+          <div class="option-desc">Follow us for updates &amp; offers</div>
+        </span>
+        <span class="chevron">›</span>
+      </a>
+
+      <a class="option" href="https://www.linkedin.com/company/mega-choice-india/" target="_blank" rel="noopener">
+        <span class="icon">
+          <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5.001A2.5 2.5 0 014.98 3.5zM3 9.75h4v11H3v-11zm7 0h3.83v1.5h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1v6.46h-4v-5.73c0-1.37-.02-3.13-1.91-3.13-1.92 0-2.21 1.5-2.21 3.03v5.83h-4v-11z"/></svg>
+        </span>
+        <span class="option-text">
+          <div class="option-title">LinkedIn</div>
+          <div class="option-desc">Company updates &amp; business page</div>
+        </span>
+        <span class="chevron">›</span>
+      </a>
+
+      <a class="option" href="https://megachoiceindia.com" target="_blank" rel="noopener">
+        <span class="icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm6.93 8h-3.11a15.6 15.6 0 00-1.2-5.09A8.03 8.03 0 0118.93 10zM12 4.07c.86 1.2 1.83 3.13 2.08 5.93H9.92c.25-2.8 1.22-4.73 2.08-5.93zM4.06 12h3.1c.07 1.8.35 3.5.86 5H4.9A7.96 7.96 0 014.06 12zm0-2a7.96 7.96 0 01.84-3.02h3.09a15.5 15.5 0 00-.86 3.02H4.06zm5.86 7.02c-.86-1.2-1.83-3.13-2.08-5.02h4.32c-.25 1.89-1.22 3.82-2.08 5.02H9.92zm2.16 1a15.6 15.6 0 001.2-3.09h3.11a8.03 8.03 0 01-4.31 3.09zM14.13 12c-.07-1.02-.2-1.99-.4-2.98H10.27c-.2.99-.33 1.96-.4 2.98H14.13zm.72-4.98a15.6 15.6 0 00-1.2-3.11 8.03 8.03 0 014.31 3.11h-3.11zm4.98 4.98c0 .69-.09 1.36-.25 2h-3.1c.07-.65.1-1.32.1-2s-.03-1.35-.1-2h3.1c.16.64.25 1.31.25 2z"/></svg>
+        </span>
+        <span class="option-text">
+          <div class="option-title">Our Website</div>
+          <div class="option-desc">megachoiceindia.com</div>
+        </span>
+        <span class="chevron">›</span>
+      </a>
+    </div>
+
+    <footer>MEGA CHOICE INDIA &middot; PAWAN KUMAR DHIRAJ KUMAR</footer>
+  </div>
+</body>
+</html>
